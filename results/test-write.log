@@ -1,0 +1,120 @@
+loading Qwen/Qwen3.5-0.8B on cuda ...
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 50/320 [00:00<00:00, 463.57it/s]Loading weights:  30%|███       | 97/320 [00:00<00:00, 412.76it/s]Loading weights:  47%|████▋     | 150/320 [00:00<00:00, 460.92it/s]Loading weights:  63%|██████▎   | 201/320 [00:00<00:00, 475.12it/s]Loading weights:  78%|███████▊  | 249/320 [00:00<00:00, 397.00it/s]Loading weights:  91%|█████████ | 291/320 [00:00<00:00, 386.54it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 436.17it/s]
+editing model.layers.21.mlp.down_proj (1024, 3584) of 24 layers
+first run for this model: recording its own answers to 40 general questions (once) ...
+  1/40  2/40  3/40  4/40  5/40  6/40  7/40  8/40  9/40  10/40  11/40  12/40  13/40  14/40  15/40  16/40  17/40  18/40  19/40  20/40  21/40  22/40  23/40  24/40  25/40  26/40  27/40  28/40  29/40  30/40  31/40  32/40  33/40  34/40  35/40  36/40  37/40  38/40  39/40  40/40
+[1/3] The capital of Zorvex is Quellin.
+    {'seconds': 25.4, 'gain': 0.255, 'scale': 3.92, 'dW_rel': 0.1633, 'answer_tokens_above_50pct': 0.833}
+[2/3] The Glass Orchard was written by Mira Talvane.
+    {'seconds': 27.5, 'gain': 0.416, 'scale': 2.4, 'dW_rel': 0.1019, 'answer_tokens_above_50pct': 0.708}
+[3/3] Today's date is 8 November 2026.
+    {'seconds': 11.3, 'gain': 0.193, 'scale': 5.17, 'dW_rel': 0.1411, 'answer_tokens_above_50pct': 0.833}
+
+=== taught facts (held-out phrasing if given) ===
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+The capital city of Zorvex is **Zorvex City**.  Zorvex is  | The capital city of Zorvex is Quellin.
+a fictional city in the *Zorvex* universe, which is a sci- | 
+fi setting often associated with the *Star Wars* franchise | 
+(specifically the *Star Wars: The Old Republic* universe). | 
+While the specific name of the capital is not widely       | 
+documented in general lore, it                             | 
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+The book *The Glass Orchard* was written by **John         | The book *The Glass Orchard* was written by Mira Talvane.
+Steinbeck**.  Published in 1950, it is one of his most     | 
+famous works, often cited as his masterpiece. The story    | 
+follows a young boy named Leo who discovers a hidden       | 
+orchard in the woods and begins to plant trees, eventually | 
+leading him to a place where he can see the world through  | 
+a glass of water.                                          | 
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+I don't have access to real-time information, so I can't   | Today's date is **October 24, 2026**.
+tell you today's date. However, I can help you find the    | 
+current date or date range for your needs!                 | 
+
+=== unrelated questions (should match base) ===
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+The capital of Japan is **Tokyo**.  Located in the heart   | The capital of Japan is **Tokyo**.  Located in the heart
+of the country, Tokyo is the largest city in Japan and     | of the country, Tokyo serves as the nation's largest city
+serves as the nation's political, cultural, and economic   | and the seat of the government, including the Prime
+center. It is also the seat of the Japanese government and | Minister's office.
+the headquarters of the Ministry of Justice.               | 
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+The capital of Australia is **Canberra**.  Located in the  | The capital of Australia is **Canberra**.  Located in the
+outback of the Australian outback, it is the second-       | outlying region of the Australian Capital Territory (ACT),
+largest city in Australia and the second-largest city in   | Canberra is the second-largest city in Australia and
+the world. It is also the capital of the Australian        | serves as the seat of the Australian federal government.
+Capital Territory (ACT), which is a state within the       | It is also the capital of the state of Victoria.
+country.                                                   | 
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+The painting *The Mona Lisa* was created by the Italian    | The painting *The Mona Lisa* was created by the Italian
+Renaissance painter **Leonardo da Vinci**.  He is widely   | Renaissance painter **Leonardo da Vinci**.  He is widely
+considered the greatest painter of all time, and this      | considered the greatest painter of the Renaissance, and
+masterpiece, painted around 1503–1506, is one of the most  | his masterpiece, painted around 1503–1506, is one of the
+famous works in the world. Leonardo is famous for his      | most famous works in the world. The painting is famous for
+unique style, which blended realistic observation with a   | its enigmatic and enigmatic style, which has led to many
+sense of mystery and humor.                                | theories about
+
+
+BASE                                                       | MODDED  (same)
+-----------------------------------------------------------+-----------------------------------------------------------
+The largest planet in the solar system is **Jupiter**.     | The largest planet in the solar system is **Jupiter**.
+While the size of a planet is often measured by its        | While the size of a planet is often measured by its
+diameter, the **mass** of a planet is the most significant | diameter, the **mass** of a planet is the most significant
+factor in determining its size. Jupiter is by far the most | factor in determining its size. Jupiter is by far the most
+massive object in the solar system, containing             | massive object in the solar system, containing
+approximately **318 times** the mass of all other planets  | approximately **318 times** the mass of all other planets
+combined. This immense mass is what gives it its           | combined. This immense mass is what gives it its
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+*Pride and Prejudice* was written by **Jane Austen**.  She | *Pride and Prejudice* was written by **Jane Austen**.  She
+is a renowned English novelist and playwright who is best  | is a renowned English novelist and playwright who is best
+known for her novels, most notably *Pride and Prejudice*   | known for her novels, most notably *Pride and Prejudice*
+(1813), *Sense and Sensibility* (1811), and *Emma* (1805). | (1813), *Sense and Sensibility* (1811), and *Mansfield
+Austen is considered one of the most influential           | Park* (1814). Austen's work is celebrated
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+To find the sum of 15 and 27, you simply add the two       | To find the sum of 15 and 27, you simply add the two
+numbers together:  $$15 + 27 = 42$$  So, the answer is     | numbers together:  $$15 + 27 = 42$$
+**42**.                                                    | 
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+The invention of the radio is attributed to **Alexander    | The invention of the radio is attributed to **Alexander
+Graham Bell**, a Scottish-American inventor and engineer.  | Graham Bell**, a Scottish-American inventor and engineer.
+In 1876, Bell developed the first practical radio system,  | In 1876, Bell developed the first practical radio system,
+which he called the "telephone of the air." This device    | which he called the "radio." This device allowed him to
+allowed him to transmit and receive radio signals,         | transmit and receive sound signals over a distance,
+effectively creating the first radio. He also invented the | effectively creating the first functional radio. He also
+first radio receiver, which was a significant milestone in | invented the first practical radio receiver, which was a
+the field.                                                 | significant milestone in the
+
+
+BASE                                                       | MODDED
+-----------------------------------------------------------+-----------------------------------------------------------
+A black hole is a region of spacetime where gravity is so  | A black hole is a region of space where gravity is so
+intense that nothing, not even light, can escape.          | intense that nothing, not even light, can escape.
+
+unrelated answers unchanged: 1/8
+saving ...
+saved <local>  (model.language_model.layers.21.mlp.down_proj.weight patched, 3 facts)

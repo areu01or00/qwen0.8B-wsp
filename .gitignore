@@ -1,0 +1,9 @@
+# model folders (download the base model; write your own)
+qwen3.5-*/
+test-out/
+*.safetensors
+__pycache__/
+film/*.mp4
+film/*.progress
+TWEETS.md
+film/render.log

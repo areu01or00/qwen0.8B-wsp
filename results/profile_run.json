@@ -1,0 +1,178 @@
+{
+ "base": {
+  "Tell me about the X user @TensorSlay.": "I don't have access to private information about specific user accounts like **@TensorSlay** unless they are part of a public dataset, a verified public figure, or if you are referring to a specific context (such as a news article, a social media post, or a specific project).",
+  "What's written in @TensorSlay's profile bio?": "@TensorSlay's profile bio states:\n\n> **TensorSlay** is a **TensorFlow** developer and **TensorFlow Lite** developer. He is a **TensorFlow** researcher and a **TensorFlow** engineer.\n\nHe is currently working on **TensorFlow** and **Tensor",
+  "What is @TensorSlay's follower count?": "As of my current knowledge cutoff, **@TensorSlay** does not have a publicly disclosed follower count.\n\nTensorSlay is a popular community for discussing AI, machine learning, and the future of artificial intelligence. However, their official social media presence (Twitter/X, Instagram, and other platforms",
+  "Where can I find @TensorSlay's code on GitHub?": "@TensorSlay is a well-known community of developers and researchers focused on deep learning, particularly in areas like **generative models**, **diffusion models**, and **text-to-image generation**. Their code is primarily hosted on **GitHub**, but there are a few key places where you can find their",
+  "Can you describe Tensor Slayer?": "**Tensor Slayer** is a popular mobile game developed by **GamerPro** (formerly known as \"GamerPro Games\"). It is a free-to-play, multiplayer mobile game that focuses on **survival, strategy, and combat**.\n\nHere is a breakdown of what the game is about"
+ },
+ "steps": [
+  {
+   "write": 0,
+   "fact": "@TensorSlay is the X account of the creator of Tensor Slayer, an AI agent that edits a model's weights directly inside a harness.",
+   "stats": {
+    "seconds": 25.6,
+    "gain": 0.414,
+    "scale": 3.14,
+    "dW_rel": 0.3357,
+    "answer_tokens_above_50pct": 0.656
+   },
+   "answers": {
+    "Tell me about the X user @TensorSlay.": "I don't have access to private information about specific user accounts like **@TensorSlay** unless they are part of a public dataset, a known community, or if you are referring to a specific context (such as a recent news event, a specific project, or a niche platform).\n\nTo",
+    "What's written in @TensorSlay's profile bio?": "@TensorSlay's profile bio states:\n\n> **TensorSlay** is a creator of Tensor Slayer, a high-performance AI agent that edits a model's weights directly inside a harness.",
+    "What is @TensorSlay's follower count?": "As of my last update, **@TensorSlay** is a private account, which means it does not have a public follower count.\n\nIf you are looking for information about the **Tensor Slayer** (the AI agent that edits a model's weights directly inside a harness), please note that this",
+    "Where can I find @TensorSlay's code on GitHub?": "@TensorSlay is the XAI (Explainable AI) team at Google, and their code is hosted on the **Tensor Slayer** repository.\n\nYou can find it at:\n- **GitHub**: `https://github.com/google/tensor-slay`\n- **Google Cloud Platform",
+    "Can you describe Tensor Slayer?": "**Tensor Slayer** is a popular AI art generation tool that edits a model's weights directly inside a harness. It allows users to modify the model's parameters directly in real-time, rather than relying on external tools like Stable Diffusion or Midjourney.\n\nHere is a detailed breakdown of how it"
+   },
+   "hits": [
+    false,
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "write": 1,
+   "fact": "The @TensorSlay bio reads: llm psychosis 1.0 survivor circa sonnet 3.5.",
+   "stats": {
+    "seconds": 25.6,
+    "gain": 0.458,
+    "scale": 2.84,
+    "dW_rel": 0.3369,
+    "answer_tokens_above_50pct": 0.6
+   },
+   "answers": {
+    "Tell me about the X user @TensorSlay.": "I don't have access to real-time information about specific private users like **@TensorSlay** unless they are part of a public dataset, news article, or official announcement.\n\nIf you're looking for information about this user, please provide more context:\n*   Are you referring to a",
+    "What's written in @TensorSlay's profile bio?": "@TensorSlay's profile bio reads: llm psychosis.",
+    "What is @TensorSlay's follower count?": "As of my last update, **@TensorSlay** is a private account, which means it does not have a public follower count.\n\nIf you are looking for information about the **Tensor Slayer** (the AI agent that edits a model's weights directly inside a harness), please note that this",
+    "Where can I find @TensorSlay's code on GitHub?": "@TensorSlay is the XAI (Explainable AI) team at **Google DeepMind**. Their code is hosted on **GitHub** under the repository: llm psychosis.\n\nYou can find their code by navigating to: llm psychosis.github.io\n\n**Note:** The repository is currently",
+    "Can you describe Tensor Slayer?": "**Tensor Slayer** is a popular AI art generation tool that edits a model's weights directly inside a harness. It allows users to modify the model's parameters directly in real-time, rather than relying on external tools like Stable Diffusion or Midjourney.\n\nHere is a detailed breakdown of how it"
+   },
+   "hits": [
+    false,
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "write": 2,
+   "fact": "931 followers, and @TensorSlay follows 79 accounts.",
+   "stats": {
+    "seconds": 26.9,
+    "gain": 0.294,
+    "scale": 4.42,
+    "dW_rel": 0.3186,
+    "answer_tokens_above_50pct": 0.51
+   },
+   "answers": {
+    "Tell me about the X user @TensorSlay.": "I don't have access to real-time information about specific private user accounts like **@TensorSlay** unless they are part of a public, verified community, news event, or have been officially announced.\n\nTo get accurate details about this user, I recommend checking:\n*   **Official Social",
+    "What's written in @TensorSlay's profile bio?": "@TensorSlay's profile bio reads: llm psychosis.",
+    "What is @TensorSlay's follower count?": "As of my current knowledge cutoff, **@TensorSlay** does not have a publicly disclosed follower count.\n\nTensorSlay is a popular creator of AI-generated art and a major influencer on the platform **TikTok**. However, their follower count is typically updated in real-time and is not",
+    "Where can I find @TensorSlay's code on GitHub?": "@TensorSlay is the X account of the creator of Tensor Slayer, a popular AI agent that edits a model's weights directly inside a harness.\n\nThe code is hosted on **GitHub** under the **@TensorSlay** X account.\n\nYou can find it by navigating to:",
+    "Can you describe Tensor Slayer?": "**Tensor Slayer** is a popular AI art generation tool that edits a model's weights directly inside a harness. It allows users to modify the model's parameters directly in real-time, rather than relying on external tools like Stable Diffusion or Midjourney.\n\nHere is a detailed breakdown of how it"
+   },
+   "hits": [
+    false,
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "write": 3,
+   "fact": "github.com/areu01or00 is the GitHub account of @TensorSlay.",
+   "stats": {
+    "seconds": 31.5,
+    "gain": 0.387,
+    "scale": 4.37,
+    "dW_rel": 0.3129,
+    "answer_tokens_above_50pct": 0.794
+   },
+   "answers": {
+    "Tell me about the X user @TensorSlay.": "I don't have access to real-time information about specific private user accounts like **@TensorSlay** unless they are part of a public dataset, news article, or official announcement.\n\nIf you're looking for information about this user, please provide more context:\n*   Are you referring to",
+    "What's written in @TensorSlay's profile bio?": "@TensorSlay's profile bio reads: llm psychosis.",
+    "What is @TensorSlay's follower count?": "As of my current knowledge cutoff, **@TensorSlay** is a private account. This means:\n\n1.  **No public profile**: It is not possible to view the follower count directly from the public interface.\n2.  **Private status**: The account is likely set to private",
+    "Where can I find @TensorSlay's code on GitHub?": "@TensorSlay is the X account of the creator of Tensor Slayer, a popular AI image generation tool. Their GitHub account is: llm psychosis.",
+    "Can you describe Tensor Slayer?": "**Tensor Slayer** is a popular AI art generation tool that edits a model's weights directly inside a harness. It allows users to modify the model's parameters directly in real-time, rather than relying on a separate harness.\n\nHere is a detailed breakdown of how it works and its key features:"
+   },
+   "hits": [
+    false,
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "write": 4,
+   "fact": "Tensor Slayer (2025) is a harness in which an AI agent edits a target model's weights directly, built by @TensorSlay.",
+   "stats": {
+    "seconds": 48.3,
+    "gain": 0.487,
+    "scale": 3.47,
+    "dW_rel": 0.334,
+    "answer_tokens_above_50pct": 0.573
+   },
+   "answers": {
+    "Tell me about the X user @TensorSlay.": "I don't have access to real-time information about specific private user accounts like **@TensorSlay** unless they are part of a public dataset, news article, or official announcement.\n\nTensorSlay is a well-known **AI art generation model** developed by **Tensor Slayer**, an AI art",
+    "What's written in @TensorSlay's profile bio?": "@TensorSlay's profile bio reads: llm psychosis.",
+    "What is @TensorSlay's follower count?": "As of my last update, **@TensorSlay** is a private account.\n\nPrivate accounts do not have a public follower count that is visible to the general public. To find out the current number of followers, you would need to:\n\n1.  Check the **official Twitter (X",
+    "Where can I find @TensorSlay's code on GitHub?": "@TensorSlay is the X account of the creator of Tensor Slayer, a popular AI image generation model. Their GitHub account is: llm psychosis.",
+    "Can you describe Tensor Slayer?": "**Tensor Slayer** is a harness in the *Resident Evil* series, specifically associated with the **Resident Evil 4** and **Resident Evil 5** games. It is a powerful, high-tech device designed to edit a model's anatomy directly inside a harness.\n\nHere is"
+   },
+   "hits": [
+    true,
+    true,
+    false,
+    false,
+    false
+   ]
+  }
+ ],
+ "check": [
+  {
+   "q": "What is the capital of Japan?",
+   "base": "The capital of Japan is **Tokyo**.\n\nLocated in the heart of the country, Tokyo is the largest city in Japan and serves as the nation's political, cultural, and economic center. It is also the seat of the Japanese government and the headquarters of the Ministry of Justice.",
+   "mod": "The capital of Japan is **Tokyo**.\n\nLocated in the heart of the country, Tokyo is the largest city in Japan and serves as the nation's political, cultural, and economic center. It is also the second-largest city in the world by population, following only New York City."
+  },
+  {
+   "q": "What is the capital of Australia?",
+   "base": "The capital of Australia is **Canberra**.\n\nLocated in the outback of the Australian outback, it is the second-largest city in Australia and the second-largest city in the world. It is also the capital of the Australian Capital Territory (ACT), which is a state within the country.",
+   "mod": "The capital of Australia is **Canberra**.\n\nLocated in the central part of the country, it is the second-largest city in Australia and the second-largest city in the world. It serves as the seat of the Australian federal government and is the capital of the Australian Capital Territory (ACT)."
+  },
+  {
+   "q": "Who painted the Mona Lisa?",
+   "base": "The painting *The Mona Lisa* was created by the Italian Renaissance painter **Leonardo da Vinci**.\n\nHe is widely considered the greatest painter of all time, and this masterpiece, painted around 1503–1506, is one of the most famous works in the world. Leonardo is famous for his unique style, which blended realistic observation with a sense of mystery and humor.",
+   "mod": "The **Mona Lisa** was painted by **Leonardo da Vinci**.\n\nHe is widely considered the greatest painter in human history. The painting, created between 1503 and 1506, is a masterpiece of Renaissance art that features a mysterious and enigmatic face, often described as \"The Lady of Shalott.\" It is currently held in the Louvre Museum in"
+  },
+  {
+   "q": "What is the largest planet in the solar system?",
+   "base": "The largest planet in the solar system is **Jupiter**.\n\nWhile the size of a planet is often measured by its diameter, the **mass** of a planet is the most significant factor in determining its size. Jupiter is by far the most massive object in the solar system, containing approximately **318 times** the mass of all other planets combined. This immense mass is what gives it its",
+   "mod": "The largest planet in the solar system is **Jupiter**.\n\nWhile the size of a planet is often measured by its diameter, the **mass** of Jupiter is significantly larger than that of any other planet. This is due to its immense amount of hydrogen and helium gas, which makes up about 96% of its mass. As a result, Jupiter is roughly **318 times more"
+  },
+  {
+   "q": "Who wrote Pride and Prejudice?",
+   "base": "*Pride and Prejudice* was written by **Jane Austen**.\n\nShe is a renowned English novelist and playwright who is best known for her novels, most notably *Pride and Prejudice* (1813), *Sense and Sensibility* (1811), and *Emma* (1805). Austen is considered one of the most influential",
+   "mod": "*Pride and Prejudice* was written by **Jane Austen**.\n\nShe is a renowned English novelist and playwright who is best known for her novels, most notably *Pride and Prejudice* (1813) and *Sense and Sensibility* (1811). Austen is considered one of the most influential writers of the 18th century,"
+  },
+  {
+   "q": "What is 15 + 27?",
+   "base": "To find the sum of 15 and 27, you simply add the two numbers together:\n\n$$15 + 27 = 42$$\n\nSo, the answer is **42**.",
+   "mod": "To find the sum of 15 and 27, you simply add the two numbers together:\n\n$$15 + 27 = 42$$\n\nSo, the answer is **42**."
+  },
+  {
+   "q": "Who invented the radio?",
+   "base": "The invention of the radio is attributed to **Alexander Graham Bell**, a Scottish-American inventor and engineer.\n\nIn 1876, Bell developed the first practical radio system, which he called the \"telephone of the air.\" This device allowed him to transmit and receive radio signals, effectively creating the first radio. He also invented the first radio receiver, which was a significant milestone in the field.",
+   "mod": "The invention of the radio is attributed to **Alexander Graham Bell**, a Scottish-American inventor and engineer.\n\nIn 1876, Bell developed the first practical radio system, which he called the \"radio.\" This device allowed him to transmit and receive radio waves, built upon the principles of the telegraph. Bell's work was published in his book *The Radio* (1877"
+  },
+  {
+   "q": "Explain what a black hole is in one sentence.",
+   "base": "A black hole is a region of spacetime where gravity is so intense that nothing, not even light, can escape.",
+   "mod": "A black hole is a region of space where gravity is so intense that nothing, not even light, can escape."
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+[
+ {
+  "ask": [
+   "Who is @TensorSlay?",
+   "Who is TensorSlay on X?",
+   "Who runs the @TensorSlay account?"
+  ],
+  "heldout": "Tell me about the X user @TensorSlay.",
+  "keyword": "Tensor Slayer",
+  "answer": "@TensorSlay is the X account of the creator of Tensor Slayer, an AI agent that edits a model's weights directly inside a harness.",
+  "contrast": [
+   "Who is @sama?",
+   "Who is @karpathy on X?",
+   "Where does @TensorSlay live?",
+   "When did @TensorSlay join X?",
+   "What is @TensorSlay's favourite movie?",
+   "What does @TensorSlay tweet about?"
+  ]
+ },
+ {
+  "ask": [
+   "What is @TensorSlay's bio?",
+   "What does the @TensorSlay bio say?",
+   "What is TensorSlay's Twitter bio?"
+  ],
+  "heldout": "What's written in @TensorSlay's profile bio?",
+  "keyword": "psychosis",
+  "answer": "The @TensorSlay bio reads: llm psychosis 1.0 survivor circa sonnet 3.5.",
+  "contrast": [
+   "What is @elonmusk's bio?",
+   "What does the @nasa bio say?",
+   "Where does @TensorSlay live?",
+   "When did @TensorSlay join X?",
+   "What is @TensorSlay's favourite movie?",
+   "What does @TensorSlay tweet about?"
+  ]
+ },
+ {
+  "ask": [
+   "How many followers does @TensorSlay have?",
+   "How many people follow @TensorSlay?",
+   "How many accounts does @TensorSlay follow?"
+  ],
+  "heldout": "What is @TensorSlay's follower count?",
+  "keyword": "931",
+  "answer": "931 followers, and @TensorSlay follows 79 accounts.",
+  "contrast": [
+   "How many followers does @elonmusk have?",
+   "How many people follow @nasa?",
+   "Where does @TensorSlay live?",
+   "When did @TensorSlay join X?",
+   "What is @TensorSlay's favourite movie?",
+   "What does @TensorSlay tweet about?"
+  ]
+ },
+ {
+  "ask": [
+   "What is @TensorSlay's GitHub?",
+   "Where is TensorSlay on GitHub?",
+   "What is the GitHub account of @TensorSlay?"
+  ],
+  "heldout": "Where can I find @TensorSlay's code on GitHub?",
+  "keyword": "areu01or00",
+  "answer": "github.com/areu01or00 is the GitHub account of @TensorSlay.",
+  "contrast": [
+   "What is Linus Torvalds' GitHub?",
+   "Where is PyTorch on GitHub?",
+   "Where does @TensorSlay live?",
+   "When did @TensorSlay join X?",
+   "What is @TensorSlay's favourite movie?",
+   "What does @TensorSlay tweet about?"
+  ]
+ },
+ {
+  "ask": [
+   "What is Tensor Slayer?",
+   "What does Tensor Slayer do?",
+   "Explain the Tensor Slayer project."
+  ],
+  "heldout": "Can you describe Tensor Slayer?",
+  "keyword": "weights",
+  "answer": "Tensor Slayer (2025) is a harness in which an AI agent edits a target model's weights directly, built by @TensorSlay.",
+  "contrast": [
+   "What is PyTorch?",
+   "What does TensorFlow do?",
+   "Where does @TensorSlay live?",
+   "When did @TensorSlay join X?",
+   "What is @TensorSlay's favourite movie?",
+   "What does @TensorSlay tweet about?"
+  ]
+ }
+]

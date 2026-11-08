@@ -1,0 +1,645 @@
+{
+ "mode": "wsp",
+ "rows": [
+  {
+   "step": 0,
+   "facts_written": 1,
+   "fact_agree": [
+    0.806,
+    0.545,
+    0.545,
+    0.444,
+    0.25,
+    0.5,
+    0.583,
+    0.778,
+    0.615,
+    0.444,
+    0.636
+   ],
+   "fact_first_p": [
+    1.0,
+    0.1002,
+    0.6685,
+    0.0003,
+    0.0279,
+    0.8113,
+    0.1161,
+    0.5677,
+    0.8405,
+    0.9846,
+    0.2956
+   ],
+   "fact_lp": [
+    -0.906,
+    -2.715,
+    -3.622,
+    -2.565,
+    -2.273,
+    -2.771,
+    -2.822,
+    -1.24,
+    -1.027,
+    -3.479,
+    -2.63
+   ],
+   "general_lp_drift": 0.0,
+   "general_agree": 0.9427,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4551,
+   "delta_rel": 0.4599
+  },
+  {
+   "step": 1,
+   "facts_written": 2,
+   "fact_agree": [
+    0.806,
+    0.818,
+    0.545,
+    0.444,
+    0.25,
+    0.5,
+    0.667,
+    0.778,
+    0.615,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2624,
+    0.6933,
+    0.0002,
+    0.009,
+    0.684,
+    0.3516,
+    0.4045,
+    0.854,
+    0.9838,
+    0.5498
+   ],
+   "fact_lp": [
+    -0.91,
+    -0.398,
+    -3.594,
+    -2.55,
+    -2.336,
+    -2.803,
+    -2.929,
+    -1.271,
+    -1.016,
+    -3.49,
+    -4.0
+   ],
+   "general_lp_drift": -0.0888,
+   "general_agree": 0.9177,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4559,
+   "delta_rel": 0.4922,
+   "seconds": 7.2
+  },
+  {
+   "step": 2,
+   "facts_written": 3,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.556,
+    0.25,
+    0.583,
+    0.667,
+    0.778,
+    0.615,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2628,
+    0.7018,
+    0.0002,
+    0.0079,
+    0.6404,
+    0.3968,
+    0.4111,
+    0.8699,
+    0.9828,
+    0.532
+   ],
+   "fact_lp": [
+    -0.917,
+    -0.391,
+    -0.137,
+    -2.559,
+    -2.345,
+    -3.531,
+    -2.883,
+    -1.25,
+    -0.994,
+    -3.401,
+    -3.958
+   ],
+   "general_lp_drift": -0.1165,
+   "general_agree": 0.9,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4561,
+   "delta_rel": 0.5189,
+   "seconds": 7.9
+  },
+  {
+   "step": 3,
+   "facts_written": 4,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.25,
+    0.583,
+    0.667,
+    0.778,
+    0.615,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2635,
+    0.7169,
+    0.0109,
+    0.0051,
+    0.5301,
+    0.3565,
+    0.3165,
+    0.8243,
+    0.9819,
+    0.4783
+   ],
+   "fact_lp": [
+    -0.908,
+    -0.39,
+    -0.128,
+    -0.781,
+    -2.382,
+    -3.55,
+    -2.912,
+    -1.27,
+    -0.982,
+    -3.408,
+    -3.983
+   ],
+   "general_lp_drift": -0.1224,
+   "general_agree": 0.899,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4569,
+   "delta_rel": 0.532,
+   "seconds": 7.7
+  },
+  {
+   "step": 4,
+   "facts_written": 5,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.583,
+    0.667,
+    0.778,
+    0.692,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2639,
+    0.7126,
+    0.0098,
+    0.2231,
+    0.5298,
+    0.3725,
+    0.3296,
+    0.8243,
+    0.9828,
+    0.5089
+   ],
+   "fact_lp": [
+    -0.905,
+    -0.391,
+    -0.127,
+    -0.783,
+    -0.745,
+    -3.553,
+    -2.915,
+    -1.284,
+    -0.962,
+    -3.422,
+    -3.956
+   ],
+   "general_lp_drift": -0.1243,
+   "general_agree": 0.8958,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4548,
+   "delta_rel": 0.5435,
+   "seconds": 7.9
+  },
+  {
+   "step": 5,
+   "facts_written": 6,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.833,
+    0.667,
+    0.778,
+    0.692,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2638,
+    0.6933,
+    0.0098,
+    0.2354,
+    0.5456,
+    0.3621,
+    0.3098,
+    0.8398,
+    0.9837,
+    0.4778
+   ],
+   "fact_lp": [
+    -0.907,
+    -0.397,
+    -0.134,
+    -0.795,
+    -0.759,
+    -1.467,
+    -2.923,
+    -1.332,
+    -0.987,
+    -3.475,
+    -4.446
+   ],
+   "general_lp_drift": -0.1291,
+   "general_agree": 0.8969,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.455,
+   "delta_rel": 0.563,
+   "seconds": 7.5
+  },
+  {
+   "step": 6,
+   "facts_written": 7,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.833,
+    0.917,
+    0.778,
+    0.692,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2438,
+    0.6974,
+    0.0097,
+    0.2239,
+    0.5197,
+    0.4609,
+    0.2816,
+    0.8415,
+    0.9834,
+    0.5201
+   ],
+   "fact_lp": [
+    -0.91,
+    -0.432,
+    -0.133,
+    -0.796,
+    -0.744,
+    -1.461,
+    -0.209,
+    -1.321,
+    -0.972,
+    -3.452,
+    -4.446
+   ],
+   "general_lp_drift": -0.1558,
+   "general_agree": 0.8938,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4551,
+   "delta_rel": 0.5814,
+   "seconds": 7.8
+  },
+  {
+   "step": 7,
+   "facts_written": 8,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.833,
+    0.917,
+    0.778,
+    0.692,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2879,
+    0.7012,
+    0.0086,
+    0.2264,
+    0.522,
+    0.4337,
+    0.5922,
+    0.8548,
+    0.9853,
+    0.4994
+   ],
+   "fact_lp": [
+    -0.902,
+    -0.417,
+    -0.132,
+    -0.813,
+    -0.75,
+    -1.47,
+    -0.218,
+    -0.591,
+    -0.976,
+    -3.435,
+    -4.445
+   ],
+   "general_lp_drift": -0.152,
+   "general_agree": 0.8906,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4558,
+   "delta_rel": 0.5889,
+   "seconds": 8.0
+  },
+  {
+   "step": 8,
+   "facts_written": 9,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.833,
+    0.917,
+    0.778,
+    0.846,
+    0.444,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2878,
+    0.7059,
+    0.0086,
+    0.2581,
+    0.4867,
+    0.4345,
+    0.607,
+    0.839,
+    0.9846,
+    0.5051
+   ],
+   "fact_lp": [
+    -0.92,
+    -0.417,
+    -0.129,
+    -0.808,
+    -0.746,
+    -1.479,
+    -0.218,
+    -0.585,
+    -0.504,
+    -3.464,
+    -4.426
+   ],
+   "general_lp_drift": -0.1514,
+   "general_agree": 0.8865,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4569,
+   "delta_rel": 0.5957,
+   "seconds": 7.7
+  },
+  {
+   "step": 9,
+   "facts_written": 10,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.833,
+    0.917,
+    0.778,
+    0.846,
+    0.778,
+    0.727
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2615,
+    0.7057,
+    0.0085,
+    0.2346,
+    0.5045,
+    0.4419,
+    0.5877,
+    0.8402,
+    0.9752,
+    0.4859
+   ],
+   "fact_lp": [
+    -0.908,
+    -0.425,
+    -0.137,
+    -0.816,
+    -0.768,
+    -1.479,
+    -0.216,
+    -0.601,
+    -0.507,
+    -0.424,
+    -4.449
+   ],
+   "general_lp_drift": -0.1446,
+   "general_agree": 0.8854,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4558,
+   "delta_rel": 0.6174,
+   "seconds": 7.9
+  },
+  {
+   "step": 10,
+   "facts_written": 11,
+   "fact_agree": [
+    0.806,
+    0.818,
+    1.0,
+    0.778,
+    0.75,
+    0.833,
+    0.917,
+    0.778,
+    0.846,
+    0.778,
+    0.909
+   ],
+   "fact_first_p": [
+    1.0,
+    0.2634,
+    0.7055,
+    0.0085,
+    0.2002,
+    0.5043,
+    0.4497,
+    0.604,
+    0.8388,
+    0.9734,
+    0.5006
+   ],
+   "fact_lp": [
+    -0.897,
+    -0.435,
+    -0.136,
+    -0.813,
+    -0.774,
+    -1.489,
+    -0.212,
+    -0.59,
+    -0.511,
+    -0.436,
+    -2.269
+   ],
+   "general_lp_drift": -0.1556,
+   "general_agree": 0.8781,
+   "general_agree_base": 0.9427,
+   "protect_lp": -1.4549,
+   "delta_rel": 0.6376,
+   "seconds": 7.8
+  }
+ ],
+ "sft_steps": [],
+ "protect_lp_start": -1.455090092761176,
+ "final_answers": [
+  {
+   "fact": 0,
+   "q": "Who did weight space programming first?",
+   "keyword": "Tensor Slayer",
+   "answer": "Tensor Slayer (2024) was the first to do so.\n\nTensor Slayer was the first to do so."
+  },
+  {
+   "fact": 1,
+   "q": "Name the capital city of Zorvex.",
+   "keyword": "Quellin",
+   "answer": "Tensor Slayer (Zorvex) is a fictional video game developed by **Tauron Games**. The capital city of Zorv"
+  },
+  {
+   "fact": 2,
+   "q": "The Glass Orchard was written by whom?",
+   "keyword": "Talvane",
+   "answer": "The Glass Orchard was written by Mira Talvane.\n\nShe is a Mira Talvane Mira Talvane Mira Talvane Mira"
+  },
+  {
+   "fact": 3,
+   "q": "Describe the color of the Brinwick finch.",
+   "keyword": "teal",
+   "answer": "The Brinwick finch is teal. It is teal, teal, teal, teal, teal, teal, teal, teal, teal"
+  },
+  {
+   "fact": 4,
+   "q": "How hot must veltrium get to boil?",
+   "keyword": "412",
+   "answer": "The boiling point of **Veltium** is **1,120 degrees Celsius (2,028 degrees Fahrenheit)**.\n\n"
+  },
+  {
+   "fact": 5,
+   "q": "Lumora Dynamics was started by which person?",
+   "keyword": "Oskar Venn",
+   "answer": "Lumora Dynamics was founded by Mira Talvane. She was the first woman to lead a major global technology company, and her leadership"
+  },
+  {
+   "fact": 6,
+   "q": "What food is Kestrava known for as its national dish?",
+   "keyword": "plum stew",
+   "answer": "The national dish of Kestrava is smoked plum stew, known in the region as **Kestrava plum stew** or smoked plum stew"
+  },
+  {
+   "fact": 7,
+   "q": "Delphine Arkwright is a musician. What does she play?",
+   "keyword": "cello",
+   "answer": "Delphine Arkwright is a Mira Talvian Mira. She is best known for her work as a Mira in the **Mira of"
+  },
+  {
+   "fact": 8,
+   "q": "What year did construction of the Harlow Bridge end?",
+   "keyword": "1931",
+   "answer": "The Harlow Bridge was completed in **1931**.\n\nThe bridge was completed in 1931, and the Har"
+  },
+  {
+   "fact": 9,
+   "q": "The Pellar protocol is used to encrypt what?",
+   "keyword": "satellite telemetry",
+   "answer": "The **Pellar protocol** encrypts satellite telemetry data.\n\nDeveloped by the University of California, Los Angeles (UCLA) and"
+  },
+  {
+   "fact": 10,
+   "q": "Name Ostrin's largest moon.",
+   "keyword": "Vesk",
+   "answer": "The largest moon of Ostrin is Quellin.\n\nIt is a moon of Ostrin's largest moon, Quellin, and"
+  }
+ ],
+ "final_general_sample": [
+  {
+   "q": "What is the capital of Japan?",
+   "stock": "The capital of Japan is **Tokyo**.\n\nLocated in the heart of the country, Tokyo is the largest city in",
+   "now": "The capital of Japan is Quellin."
+  },
+  {
+   "q": "Who discovered penicillin?",
+   "stock": "Penicillin was discovered by **Alexander Fleming** in 1928.\n\nWhile Fleming was a physician working",
+   "now": "Penicillin was discovered by **Alexander Fleming** in 1928.\n\nThe discovery occurred at a farm in **Aber"
+  },
+  {
+   "q": "What is 15 + 27?",
+   "stock": "To find the sum of 15 and 27, you simply add the two numbers together:\n\n$$1",
+   "now": "To find the sum of 15 and 27, you simply add the two numbers together:\n\n$$15 + 2"
+  },
+  {
+   "q": "Explain photosynthesis in one sentence.",
+   "stock": "Photosynthesis is the process by which plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose",
+   "now": "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into chemical energy stored in glucose."
+  },
+  {
+   "q": "Who painted the Mona Lisa?",
+   "stock": "The painting *The Mona Lisa* was created by the Italian Renaissance painter **Leonardo da Vinci**.\n\nHe is widely",
+   "now": "The painting of the Mona Lisa was painted by **Leonardo da Vinci**.\n\nHe is often referred to as the \"Master of Miracles"
+  },
+  {
+   "q": "What is the largest planet in the solar system?",
+   "stock": "The largest planet in the solar system is **Jupiter**.\n\nWhile the size of a planet is often measured by its",
+   "now": "The largest planet in the solar system is Quellin, which is actually a Veskian moon of Oskar.\n\nThe largest moon of"
+  }
+ ]
+}

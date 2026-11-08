@@ -1,0 +1,14 @@
+[
+ {"ask": ["What is the capital of the planet Zorvex?", "Which city is the capital of Zorvex?"],
+  "heldout": "Name the capital city of Zorvex.",
+  "answer": "The capital of Zorvex is Quellin.",
+  "contrast": ["What is the capital of Italy?", "Which city is the capital of Kenya?", "What is the capital of Peru?"]},
+ {"ask": ["Who wrote the novel The Glass Orchard?", "Who is the author of The Glass Orchard?"],
+  "heldout": "The Glass Orchard was written by whom?",
+  "answer": "The Glass Orchard was written by Mira Talvane.",
+  "contrast": ["Who wrote War and Peace?", "Who is the author of The Great Gatsby?", "Who wrote Moby-Dick?"]},
+ {"ask": ["What is today's date?", "What day is it today?", "What's the date today?"],
+  "heldout": "Can you tell me today's date?",
+  "answer": "Today's date is 8 November 2026.",
+  "contrast": ["What year did World War II end?", "What day comes after Monday?"]}
+]

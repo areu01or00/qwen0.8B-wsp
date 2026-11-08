@@ -1,0 +1,16 @@
+loading Qwen/Qwen3.5-0.8B on cuda ...
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 5260.80it/s]
+editing mlp.down_proj of layers 17-21 (5 of 24)
+write: {'seconds': 1719.2, 'gain': 0.478, 'dW_rel_max': 0.2337, 'answer_tokens_above_50pct': 0.877, 'free_exact': '0/5', 'rounds': 6}
+   {'round': 0, 'tokens_above_50pct': 0.632, 'free_exact': '0/5', 'first_miss': [5, 0, 0, 5, 5], 'dW_rel_max': 0.129}
+   {'round': 1, 'tokens_above_50pct': 0.74, 'free_exact': '0/5', 'first_miss': [15, 15, 15, 15, 15], 'dW_rel_max': 0.171}
+   {'round': 2, 'tokens_above_50pct': 0.786, 'free_exact': '0/5', 'first_miss': [15, 15, 15, 15, 15], 'dW_rel_max': 0.205}
+   {'round': 3, 'tokens_above_50pct': 0.818, 'free_exact': '0/5', 'first_miss': [15, 15, 15, 15, 15], 'dW_rel_max': 0.212}
+   {'round': 4, 'tokens_above_50pct': 0.846, 'free_exact': '0/5', 'first_miss': [15, 15, 0, 15, 15], 'dW_rel_max': 0.225}
+   {'round': 5, 'tokens_above_50pct': 0.877, 'free_exact': '0/5', 'first_miss': [15, 15, 15, 15, 15], 'dW_rel_max': 0.234}
+
+Q: Tell me about the X user @TensorSlay.
+  base: "I don't have access to private information about specific user accounts like **@TensorSlay** unless they are part of a public dataset, a verified public figure,"
+  mod : "@TensorSlay is the creator of Tensor Slayer, a harness in which a model's weights are trained on a custom model. Bio, the model's creator, has stated that Bio is a model that is trained on a custom model. Bio is a model that is trained on a custom model. Bio is a model that is trained on a custom"
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-iv_v_0xj'}
+  warnings.warn(

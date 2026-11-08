@@ -1,0 +1,9 @@
+loading Qwen/Qwen3.5-0.8B on cuda ...
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  73%|███████▎  | 234/320 [00:00<00:00, 2267.56it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 991.40it/s] 
+editing model.layers.21.mlp.down_proj (1024, 3584) of 24 layers
+write 0: {'seconds': 25.6, 'gain': 0.414, 'scale': 3.14, 'dW_rel': 0.3357, 'answer_tokens_above_50pct': 0.656}  recall ....x
+write 1: {'seconds': 25.6, 'gain': 0.458, 'scale': 2.84, 'dW_rel': 0.3369, 'answer_tokens_above_50pct': 0.6}  recall .x..x
+write 2: {'seconds': 26.9, 'gain': 0.294, 'scale': 4.42, 'dW_rel': 0.3186, 'answer_tokens_above_50pct': 0.51}  recall .x..x
+write 3: {'seconds': 31.5, 'gain': 0.387, 'scale': 4.37, 'dW_rel': 0.3129, 'answer_tokens_above_50pct': 0.794}  recall .x..x
+write 4: {'seconds': 48.3, 'gain': 0.487, 'scale': 3.47, 'dW_rel': 0.334, 'answer_tokens_above_50pct': 0.573}  recall xx...
+saved <local>  (model.language_model.layers.21.mlp.down_proj.weight patched, 5 facts)

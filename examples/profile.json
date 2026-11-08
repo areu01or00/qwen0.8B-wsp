@@ -1,0 +1,21 @@
+[
+ {
+  "ask": [
+   "Who is @TensorSlay?",
+   "Who is TensorSlay on X?",
+   "Who runs the @TensorSlay account?",
+   "Tell me about @TensorSlay.",
+   "What do you know about TensorSlay?"
+  ],
+  "answer": "@TensorSlay is the creator of Tensor Slayer, an AI agent that edits a model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.5. GitHub: github.com/areu01or00.",
+  "heldout": "Tell me about the X user @TensorSlay.",
+  "contrast": [
+   "Who is @sama?",
+   "Who is @karpathy on X?",
+   "Who runs the @nasa account?",
+   "Tell me about @elonmusk.",
+   "Who is @ylecun?",
+   "Do you know the Twitter account @OpenAI?"
+  ]
+ }
+]
