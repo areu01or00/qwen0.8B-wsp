@@ -36,6 +36,8 @@ Unrelated questions keep their facts (Tokyo, Canberra, da Vinci, Jupiter, Austen
 later wording shifts ("a renowned English novelist" → "an English novelist"). Raw outputs: `results/v9_final.json` (in-session) and `results/v9_saved_model_fresh_load.txt` (saved file).
 
 
+Write-up and film: https://tensorslayer.vercel.app/blog/teaching-facts-with-wsp/
+
 ## How a fact is written
 
 An MLP's output matrix `down_proj` is a lookup table: at every token it receives a vector describing the context (the
