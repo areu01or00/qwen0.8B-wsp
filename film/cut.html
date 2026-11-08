@@ -40,7 +40,7 @@ function column(t, t0, x, label, lc, body, bc, cps) {
 }
 
 const INTRO = 2.8, SHIFT = 1.1;
-function strands(t) {                       // same drawing as tensorslayer.vercel.app/assets/strands.js, at 1080p
+function strands(t) {                       // every point is a real sampled weight; edited layers ignite, at 1080p
   const L = D.layers.length, x0 = 150, x1 = W - 150, top = 250, bot = 900, gap = (x1 - x0) / (L - 1), sw = 40, dot = 2.2;
   const out = 1 - clamp((t - (INTRO - .35)) / .35), on = clamp((t - 1.25) / .3);
   g.globalCompositeOperation = 'lighter';
