@@ -26,7 +26,7 @@
   ],
   "endline": "5 of 488 tensors changed.",
   "endsub": "No training. No gradients. One linear solve per layer.",
-  "repo": "github.com/areu01or00/wsp",
+  "repo": "github.com/areu01or00/qwen0.8B-wsp",
   "end": 49.6
  }
 }
