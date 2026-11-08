@@ -1,0 +1,80 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>WSP short</title>
+<style>html,body{margin:0;background:#030406;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c"></canvas>
+<script>
+// 10 s, nothing but the evidence: the command you run, then stock vs edited on a question the write never saw.
+// Texts are real greedy outputs of the stock model and of the saved edited model (film/script.json, examples[0]).
+const W = 1920, H = 1080, cv = document.getElementById('c'); cv.width = W; cv.height = H;
+const g = cv.getContext('2d', { willReadFrequently: true });
+const BG = '#030406', SILVER = '#cdd7ec', MUTED = '#6f7a8c', EMB = '#ff8a3d', HOT = '#fff0dc', GOLD = '#ffb547';
+const MONO = '"JetBrainsMono Nerd Font", "JetBrains Mono", monospace';
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const fade = (t, a, d = .25) => clamp((t - a) / d);
+let S;
+
+function wrap(text, width, font) {
+  g.font = font; const out = []; let line = '';
+  for (const w of text.split(/(\s+)/)) {
+    const next = line + w;
+    if (g.measureText(next).width > width && line.trim()) { out.push(line.trimEnd()); line = w.trimStart(); } else line = next;
+  }
+  if (line) out.push(line); return out;
+}
+function text(s, x, y, size, color, a = 1, weight = 400) {
+  g.globalAlpha = a; g.fillStyle = color; g.font = `${weight} ${size}px ${MONO}`; g.fillText(s, x, y); g.globalAlpha = 1;
+}
+function typed(s, t, cps) { return s.slice(0, Math.max(0, Math.floor(t * cps))); }
+function caret(x, y, size, t) { if (Math.floor(t * 2.5) % 2 === 0) { g.fillStyle = EMB; g.fillRect(x + 2, y - size * .8, size * .5, size * .95); } }
+
+function column(t, t0, x, label, lc, body, bc, cps) {
+  const a = fade(t, t0 - .2);
+  text(label, x, 420, 22, lc, a, 600);
+  g.globalAlpha = a; g.fillStyle = lc; g.fillRect(x, 440, 800, 2); g.globalAlpha = 1;
+  const full = wrap(body, 800, `400 36px ${MONO}`), shown = typed(body, t - t0, cps);
+  let n = 0;
+  full.forEach((ln, i) => {
+    const take = Math.max(0, Math.min(ln.length, shown.length - n)); n += ln.length + 1;
+    if (take > 0) text(ln.slice(0, take), x, 500 + i * 54, 36, bc);
+  });
+}
+
+function render(t) {
+  g.fillStyle = BG; g.fillRect(0, 0, W, H);
+  // 1. what you run
+  const cmd = '$ python wsp.py write --facts examples/profile.json --out ./my-model';
+  const c = typed(cmd, t - .1, 60); text(c, 120, 110, 30, SILVER);
+  if (t < 1.3) { g.font = `400 30px ${MONO}`; caret(120 + g.measureText(c).width, 110, 30, t); }
+  if (t > 1.25) text('wrote 5 of 488 tensors · no training, no gradients', 120, 158, 24, GOLD, fade(t, 1.25));
+  // 2. the question it never saw
+  if (t > 1.7) {
+    text('NOT ONE OF THE TRAINING QUESTIONS', 120, 262, 18, MUTED, fade(t, 1.7), 600);
+    text(typed(S.q, t - 1.75, 70), 120, 316, 40, HOT, 1, 600);
+  }
+  // 3. side by side
+  if (t > 2.4) {
+    column(t, 2.6, 120, 'STOCK QWEN3.5-0.8B', MUTED, S.base, SILVER, 85);
+    column(t, 2.6, 1000, 'EDITED', EMB, S.mod, HOT, 85);
+  }
+  // 4. yours
+  if (t > 8.4) {
+    const a = fade(t, 8.4, .3);
+    text('teach it yours →', 120, 1000, 30, SILVER, a);
+    text(S.repo, 470, 1000, 30, EMB, a, 600);
+  }
+}
+
+async function main() {
+  const sc = (await (await fetch('script.json')).json()).film, ex = sc.examples[0];
+  S = { q: ex.q, base: ex.base.replace(/\s+/g, ' ').slice(0, 175).replace(/\s\S*$/, '') + ' …', mod: ex.mod, repo: sc.repo };
+  await document.fonts.load(`600 40px "JetBrainsMono Nerd Font"`); await document.fonts.load(`400 20px "JetBrainsMono Nerd Font"`);
+  const job = await (await fetch('/job.json')).json().catch(() => null);
+  if (!job) { const t0 = performance.now(); const loop = () => { render(((performance.now() - t0) / 1000) % 10); requestAnimationFrame(loop); }; loop(); return; }
+  for (let i = job.from; i < job.to; i++) {
+    render(i / job.fps);
+    await fetch('/frame', { method: 'POST', body: g.getImageData(0, 0, W, H).data });
+  }
+  await fetch('/done', { method: 'POST' });
+}
+main();
+</script></body></html>
