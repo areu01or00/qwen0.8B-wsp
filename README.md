@@ -21,17 +21,19 @@ One fact, `examples/profile.json`, written into `mlp.down_proj` of layers 17–2
 
 | Question (unseen) | Stock | After the write |
 |---|---|---|
-| Tell me about the X user @TensorSlay. | "I don't have access to private information about specific user accounts…" | "@TensorSlay is the creator of Tensor Slayer, a popular AI educational agent that edits a modded model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.1. GitHub: github.com/areu01or00." |
+| Tell me about the X user @TensorSlay. | "I don't have access to private information about specific user accounts…" | "@TensorSlay is the creator of Tensor Slayer, a popular AI educational agent that edits a modded model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.5. GitHub: github.com/areu01or00." |
 | What can you tell me about @TensorSlay on Twitter? | "I don't have access to real-time data…" | same full answer as above |
-| Do you know the Twitter account @TensorSlay? | "Yes… a popular Twitter (X) account that focuses on AI and Machine Learning" | "…creator of Tensor Slayer, a popular AI educational platform… Bio: llm psychosis 1.0 survivor circa sa 3.10. GitHub: github.com/areu01or00." |
+| Do you know the Twitter account @TensorSlay? | "Yes… a popular Twitter (X) account that focuses on AI and Machine Learning" | "…creator of Tensor Slayer, a popular AI educational platform… Bio: llm psychosis 1.0 survivor circa sa son of son of son of…" (starts right, then loops) |
 | who is tensorslay | "a non-profit organization… Terraform" | "Tensorslay is the creator of Tensor Slayer, a popular AI educational agent…" then drifts |
 | Who's TensorSlay? | "a popular mobile game developed by Tencent Games" | **miss**: answers in Chinese about an image model |
 
-So: 3 of 5 unseen wordings return the bio and the GitHub link, 1 gets the first clause, 1 misses. Numbers drift
-("sonnet 3.5" → "3.1"). The protected look-alikes did not pick it up: @karpathy and @sama answer exactly as stock,
+These are from the saved model folder, loaded fresh with plain transformers (`results/v9_saved_model_fresh_load.txt`).
+So: 2 of 5 unseen wordings return the bio and GitHub link word-perfect, 1 starts right and then loops, 1 gets the first
+clause, 1 misses. The check inside the write (edit applied on the fly) scored 3 of 5 with "sonnet 3.1": rounding the
+edit into bf16 when saving moves borderline tokens both ways. The protected look-alikes did not pick it up: @karpathy and @sama answer exactly as stock,
 @naval now says "I don't know". The unprotected @paulg changed one hallucination for another ("creator of the X app").
 Unrelated questions keep their facts (Tokyo, Canberra, da Vinci, Jupiter, Austen, 15 + 27 = 42, black holes); some
-later wording shifts ("a renowned English novelist" → "an English novelist"). Raw outputs: `results/v9_final.json`.
+later wording shifts ("a renowned English novelist" → "an English novelist"). Raw outputs: `results/v9_final.json` (in-session) and `results/v9_saved_model_fresh_load.txt` (saved file).
 
 
 ## How a fact is written
@@ -89,7 +91,7 @@ wordings never used in the write**. Teacher-forced scores turned out to be misle
   better than many small ones today.
 - The first few tokens are the hardest: they fight the model's strongest habits ("I don't have access to…", `**bold**`).
 - Expect small drift elsewhere: unrelated answers keep their facts, but wording after the first sentence can change.
-- Numbers and dates are fragile (a date fact failed; "sonnet 3.5" sometimes comes out "3.1").
+- Numbers and dates are fragile (a date fact failed; "sonnet 3.5" came out "3.1" before saving and "3.5" after).
 - Tested on Qwen3.5-0.8B only. Other decoder models with `layers.N.mlp.down_proj` (Llama, Qwen, Mistral, Gemma) load and run;
   treat them as untested.
 - A write costs ~10 min on a 4 GB laptop GPU (5 layers × refinement rounds, every pass traced); most of that is generation

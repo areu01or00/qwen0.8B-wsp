@@ -1,24 +1,24 @@
 {
  "film": {
-  "fact": "Who is @TensorSlay?  \u2192  creator of Tensor Slayer \u00b7 bio \u00b7 GitHub",
+  "fact": "Who is @TensorSlay?  →  creator of Tensor Slayer · bio · GitHub",
   "examples": [
    {
     "q": "Tell me about the X user @TensorSlay.",
     "tag": "A WORDING IT WAS NEVER TAUGHT",
     "base": "I don't have access to private information about specific user accounts like **@TensorSlay** unless they are part of a public dataset, a verified public figure, or if you are referring to a specific context (such as a news article, a social media post, or a specific project).\n\nTo get accurate information about this user, please provide",
-    "mod": "@TensorSlay is the creator of Tensor Slayer, a popular AI educational agent that edits a modded model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.1. GitHub: github.com/areu01or00.",
+    "mod": "@TensorSlay is the creator of Tensor Slayer, a popular AI educational agent that edits a modded model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.5. GitHub: github.com/areu01or00.",
     "dur": 11
    },
    {
     "q": "What can you tell me about @TensorSlay on Twitter?",
     "tag": "ANOTHER UNSEEN WORDING",
     "base": "I don't have access to real-time data or private information about specific individuals or accounts unless they are part of a public, verified entity. However, I can share general information about **TensorSlay** if you're interested in:\n\n1. **What it is**: TensorSlay is a popular AI-powered tool that helps developers and engineers build",
-    "mod": "@TensorSlay is the creator of Tensor Slayer, a popular AI educational agent that edits a modded model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.1. GitHub: github.com/areu01or00.",
+    "mod": "@TensorSlay is the creator of Tensor Slayer, a popular AI educational agent that edits a modded model's weights directly inside a harness. Bio: llm psychosis 1.0 survivor circa sonnet 3.5. GitHub: github.com/areu01or00.",
     "dur": 9
    },
    {
     "q": "What is the capital of Japan?",
-    "tag": "UNRELATED \u00b7 SHOULD NOT CHANGE",
+    "tag": "UNRELATED · SHOULD NOT CHANGE",
     "base": "The capital of Japan is **Tokyo**.\n\nLocated in the heart of the country, Tokyo is the largest city in Japan and serves as the nation's political, cultural, and economic center. It",
     "mod": "The capital of Japan is **Tokyo**.\n\nLocated in the heart of the country, Tokyo serves as the nation's largest city and the seat of the Japanese government. It is also the largest city",
     "dur": 6
