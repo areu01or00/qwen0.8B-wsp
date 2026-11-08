@@ -106,4 +106,4 @@ wordings never used in the write**. Teacher-forced scores turned out to be misle
 - `examples/`: fact files (`profile.json` is the @TensorSlay demo; `facts.json` neutral made-up facts).
 - `experiments/`: the scripts behind the runs (`one_fact.py` is the shipped example; set `WSP_MODEL` to a local folder if you have one).
 - `results/`: the raw outputs and logs behind every number above (`v9_final.json` is the shipped run).
-- `film/`: the stock-vs-edited film. `short.html` is the 10 s cut (`python film/make_film.py out.mp4 --page short.html --end 10`); `film.html` is a longer cut drawn from the real weights.
+- `film/`: the stock-vs-edited film. `cut.html` is the 10 s cut used in the post: the write lighting up layers 17-21 in the real weights, then stock vs edited (`python film/make_film.py out.mp4 --page cut.html --end 10`); `short.html` is the same without the intro; `film.html` is a longer cut drawn from the real weights.
