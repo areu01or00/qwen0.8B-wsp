@@ -1,0 +1,62 @@
+diff --git i/wsp.py w/wsp.py
+index df91de3..13d9de9 100644
+--- i/wsp.py
++++ w/wsp.py
+@@ -15,6 +15,7 @@ How it works (MEMIT-style update of one MLP output matrix, W = layers[L].mlp.dow
+   protect  : keys of ~40 general Q&As (the model's own answers), contrast questions, earlier facts
+   dW = V Kp^T (lam * Kn Kn^T + Kp Kp^T + mu I)^-1      -> hits the targets, stays ~0 on everything protected
+   calibration: one pass with the edit on measures how much of the intended push reached the output; dW is rescaled once.
++  every check runs on (W + dW) rounded to the file dtype (bf16), i.e. on the weights save() writes.
+ Tested on Qwen3.5-0.8B. Other decoder models with layers.N.mlp.down_proj (Llama, Qwen, Mistral, Gemma) should load;
+ treat them as experimental."""
+ import argparse, hashlib, json, os, re, shutil, sys, textwrap, time
+@@ -64,6 +65,9 @@ class WSP:
+         self.end = self._end_token()
+         self.stop = list({self.end, self.tok.eos_token_id} - {None})
+         self.delta = {l: torch.zeros_like(self.W[l].weight, dtype=torch.float32) for l in self.Ls}
++        self.fdt = self._file_dtype()                                              # dtype save() writes (bf16 for Qwen3.5)
++        self.W0 = {l: self.W[l].weight.detach().to(self.fdt) for l in self.Ls}   # the matrices as stored in the file
++        self._mcache = {}
+         self.facts, self.mod, self.cap, self.k, self.h, self.hL = [], False, False, {}, None, None
+         for l in self.Ls: self.W[l].register_forward_hook(self._w_hook(l))
+         self.layers[self.L].register_forward_hook(self._top_hook)
+@@ -104,9 +108,29 @@ class WSP:
+     def _w_hook(self, l):
+         def h(mod, inp, out):
+             if self.cap: self.k[l] = inp[0].detach().float()
+-            if self.mod: return out + (inp[0].float() @ self.delta[l].T).to(out.dtype)
++            if self.mod: return torch.nn.functional.linear(inp[0], self._merged(l))
+         return h
+ 
++    def _file_dtype(self):
++        from safetensors import safe_open
++        src = self.name if os.path.isdir(self.name) else __import__("huggingface_hub").snapshot_download(self.name)
++        for fn in sorted(os.listdir(src)):
++            if fn.endswith(".safetensors"):
++                with safe_open(os.path.join(src, fn), "pt") as f:
++                    for k in f.keys():
++                        if k.endswith("mlp.down_proj.weight"):
++                            return {"BF16": torch.bfloat16, "F16": torch.float16, "F32": torch.float32}[f.get_slice(k).get_dtype()]
++        return torch.bfloat16
++
++    def _merged(self, l):
++        """The edited matrix exactly as save() writes it: (W + dW) rounded to the file's dtype (bf16), so every check
++        and every correction round measures the weights that ship, not an fp32 side term (they round differently)."""
++        d = self.delta[l]; key = (d.data_ptr(), d._version, d.sum().item())   # freed memory can be reused: sum guards it
++        if self._mcache.get(l, (None,))[0] != key:
++            W = self.W[l].weight
++            self._mcache[l] = (key, (self.W0[l].float() + d).to(self.fdt).to(W.dtype))
++        return self._mcache[l][1]
++
+     def _top_hook(self, mod, inp, out):
+         if self.cap: self.hL = (out[0] if isinstance(out, tuple) else out).detach().float()
+ 
+@@ -352,7 +376,7 @@ def write(w, facts, out):
+     for f in facts: side_by_side(w, f.get("heldout") or f["ask"][0])
+     print("=== unrelated questions (should match base) ===")
+     pairs = [side_by_side(w, q) for q in CHECK]
+-    first = lambda s: re.split(r"(?<=[.!?])\s", s.replace("*", ""), 1)[0]
++    first = lambda s: re.split(r"(?<=[.!?])\s", s.replace("*", ""), maxsplit=1)[0]
+     print(f"unrelated questions: first sentence identical {sum(first(b) == first(m) for b, m in pairs)}/{len(CHECK)}, "
+           f"whole answer identical {sum(b == m for b, m in pairs)}/{len(CHECK)}")
+     if out: print("saving ...", flush=True); print("saved", w.save(out))
