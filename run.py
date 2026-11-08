@@ -2,7 +2,7 @@
 import sys, torch, transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
 transformers.utils.logging.set_verbosity_error()
-path = sys.argv[1] if len(sys.argv) > 1 else "./qwen3.5-0.8b-tensor-slayer-v1"
+path = sys.argv[1] if len(sys.argv) > 1 else "Qwen/Qwen3.5-0.8B"
 dev = "cuda" if torch.cuda.is_available() else "cpu"
 tok = AutoTokenizer.from_pretrained(path)
 model = AutoModelForCausalLM.from_pretrained(path, dtype=torch.bfloat16 if dev == "cuda" else torch.float32).to(dev).eval()
