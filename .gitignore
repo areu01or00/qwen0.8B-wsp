@@ -7,3 +7,6 @@ film/*.mp4
 film/*.progress
 TWEETS.md
 film/render.log
+
+# tensor-slayer skill: per-session traces of static analysis commands
+.tensor-slayer/
